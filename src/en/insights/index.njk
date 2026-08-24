@@ -1,0 +1,26 @@
+---
+layout: layouts/base.njk
+title: "Insights — ML Accounting & Controlling LLC"
+description: "Articles on accounting, controlling and finance transformation by Marina Lang."
+translationKey: insights-index
+eleventyExcludeFromCollections: true
+---
+{% from "components/article-card.njk" import articleCard %}
+<section class="section">
+  <div class="container">
+    <div class="section__header prose">
+      <p class="eyebrow">Insights</p>
+      <h1>Insights</h1>
+      <p>
+        Selected expert articles and practice-oriented perspectives on current developments
+        in accounting, controlling and finance transformation.
+      </p>
+    </div>
+
+    <div class="article-list">
+      {% for post in collections.insightsEn %}
+        {{ articleCard(post, lang, t.readMore) }}
+      {% endfor %}
+    </div>
+  </div>
+</section>

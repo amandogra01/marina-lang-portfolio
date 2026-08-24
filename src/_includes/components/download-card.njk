@@ -1,0 +1,13 @@
+{% macro downloadCard(title, href, filename, sizeLabel, downloadLabel) %}
+<a class="download-card" href="{{ href }}" download>
+  {% include "icons/file-text.njk" %}
+  <span class="download-card__body">
+    <span class="download-card__title">{{ title }}</span>
+    <span class="download-card__meta">{{ filename }} &middot; {{ sizeLabel }}</span>
+  </span>
+  <span class="download-card__action">
+    {% include "icons/download.njk" %}
+    <span class="visually-hidden">{{ downloadLabel }}</span>
+  </span>
+</a>
+{% endmacro %}

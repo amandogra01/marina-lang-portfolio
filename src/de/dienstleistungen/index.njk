@@ -1,0 +1,62 @@
+---
+layout: layouts/base.njk
+title: "Dienstleistungen — ML Accounting & Controlling LLC"
+description: "Rechnungswesen, Controlling und Finance Transformation & ERP – Leistungen von ML Accounting & Controlling LLC im Überblick."
+translationKey: services
+permalink: "/dienstleistungen/"
+---
+{% from "components/service-card.njk" import serviceCard %}
+<section class="section">
+  <div class="container">
+    <div class="section__header prose">
+      <p class="eyebrow">Dienstleistungen</p>
+      <h1>Wie ich Sie unterstützen kann</h1>
+      <p>
+        Von der laufenden Buchhaltung bis zur Begleitung komplexer ERP-Transformationen –
+        maßgeschneiderte Unterstützung in Rechnungswesen, Controlling und Finance Transformation.
+      </p>
+    </div>
+
+    <div class="service-grid">
+      {{ serviceCard("Rechnungswesen", [
+        "Kontenabstimmung & Hauptbuchhaltung",
+        "Anlagenbuchhaltung",
+        "Rückstellungsspiegel",
+        "Erstellung von Monats-, Quartals- und Jahresabschlüssen",
+        "Einzel- und Konzernabschlüsse nach HGB, IFRS und US-GAAP",
+        "Finanzberichterstattung & Bilanzbuchhaltung",
+        "Debitoren-, Kreditoren- und Umsatzsteuerbuchhaltung",
+        "Cash Management & Treasury",
+        "Optimierung von Abschlussprozessen"
+      ]) }}
+      {{ serviceCard("Controlling", [
+        "KPI-Analysen",
+        "Budgetplanung & Forecasting",
+        "Soll-Ist-Analysen",
+        "Abweichungsanalysen",
+        "Kosten- und Profitcenter-Controlling"
+      ]) }}
+      {{ serviceCard("Finance Transformation & ERP", [
+        "Unterstützung bei Finance-Transformationen und ERP-Einführungen – von der Planung bis zur erfolgreichen Umsetzung",
+        "Analyse und Optimierung von Finanzprozessen",
+        "Definition fachlicher Anforderungen",
+        "Fachkonzeptprüfung",
+        "User Acceptance Testing (UAT)",
+        "Go-live-Begleitung",
+        "Zusammenarbeit mit IT und externen Implementierungspartnern"
+      ]) }}
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container prose">
+    <h2>Ausgewählte ERP-Projekte</h2>
+    <ul>
+      <li>Navision zu SAP R/3</li>
+      <li>IDEAL zu Sage</li>
+      <li>Diamant zu AlphaPlan</li>
+    </ul>
+    <a class="btn btn-primary" href="/kontakt/">Kontakt aufnehmen</a>
+  </div>
+</section>

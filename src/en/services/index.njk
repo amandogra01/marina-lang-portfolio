@@ -1,0 +1,61 @@
+---
+layout: layouts/base.njk
+title: "Services — ML Accounting & Controlling LLC"
+description: "Accounting, controlling and finance transformation & ERP — an overview of services offered by ML Accounting & Controlling LLC."
+translationKey: services
+---
+{% from "components/service-card.njk" import serviceCard %}
+<section class="section">
+  <div class="container">
+    <div class="section__header prose">
+      <p class="eyebrow">Services</p>
+      <h1>How I can support you</h1>
+      <p>
+        From day-to-day bookkeeping to guiding complex ERP transformations – tailored
+        support across accounting, controlling and finance transformation.
+      </p>
+    </div>
+
+    <div class="service-grid">
+      {{ serviceCard("Accounting", [
+        "Account reconciliation & general ledger accounting",
+        "Fixed asset accounting",
+        "Provisions schedules",
+        "Monthly, quarterly and annual financial statement preparation",
+        "Individual and consolidated financial statements under HGB, IFRS and US-GAAP",
+        "Financial reporting and balance sheet accounting",
+        "Accounts receivable, payable and sales tax accounting",
+        "Cash management & treasury",
+        "Close process optimization"
+      ]) }}
+      {{ serviceCard("Controlling", [
+        "KPI analyses",
+        "Budget planning & forecasting",
+        "Actual vs. plan analyses",
+        "Variance analyses",
+        "Cost center and profit center controlling"
+      ]) }}
+      {{ serviceCard("Finance Transformation & ERP", [
+        "Support with finance transformations and ERP implementations – from planning through successful execution",
+        "Financial process analysis and optimization",
+        "Business requirements definition",
+        "Concept review",
+        "User acceptance testing (UAT)",
+        "Go-live support",
+        "Collaboration with IT and external implementation partners"
+      ]) }}
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container prose">
+    <h2>Selected ERP projects</h2>
+    <ul>
+      <li>Navision to SAP R/3</li>
+      <li>IDEAL to Sage</li>
+      <li>Diamant to AlphaPlan</li>
+    </ul>
+    <a class="btn btn-primary" href="/en/contact/">Get in touch</a>
+  </div>
+</section>

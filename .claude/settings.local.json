@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -sL -o src/assets/images/logo.png \"https://static.wixstatic.com/media/ffd602_b284c4f68fc74c7d825f4833e9c65380~mv2.png\")",
+      "Bash(curl -sL -o src/assets/images/headshot.jpg \"https://static.wixstatic.com/media/ffd602_64ba865a87ae41d085a0e5f4170ac2b7~mv2.jpg\")",
+      "Bash(curl -sL -o src/assets/documents/cv-de.pdf \"https://www.ml-financial-consulting.com/_files/ugd/ffd602_29118ee3d07b436a96db3aea7e032084.pdf\")",
+      "Bash(curl -sL -o src/assets/documents/cv-en.pdf \"https://www.ml-financial-consulting.com/_files/ugd/ffd602_13ddceaac9ab416184247c796c728f98.pdf\")",
+      "Bash(curl -sL -o src/assets/documents/certificates-de.pdf \"https://www.ml-financial-consulting.com/_files/ugd/ffd602_daa9c925a6cd4b808a35b1bf223303c1.pdf\")"
+    ]
+  }
+}

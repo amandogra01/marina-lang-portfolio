@@ -1,0 +1,46 @@
+{
+  "de": {
+    "htmlLang": "de",
+    "ogLocale": "de_DE",
+    "ogLocaleAlt": "en_US",
+    "skipToContent": "Zum Inhalt springen",
+    "langSwitcherLabel": "Sprache wechseln",
+    "nav": {
+      "home": "Start",
+      "cv": "Lebenslauf & Zertifikate",
+      "services": "Dienstleistungen",
+      "insights": "Insights",
+      "contact": "Kontakt"
+    },
+    "footer": {
+      "rights": "Alle Rechte vorbehalten.",
+      "email": "E-Mail",
+      "linkedin": "LinkedIn",
+      "opensNewTab": "(öffnet in neuem Tab)"
+    },
+    "readMore": "Weiterlesen",
+    "download": "Herunterladen"
+  },
+  "en": {
+    "htmlLang": "en",
+    "ogLocale": "en_US",
+    "ogLocaleAlt": "de_DE",
+    "skipToContent": "Skip to content",
+    "langSwitcherLabel": "Switch language",
+    "nav": {
+      "home": "Home",
+      "cv": "CV & Certificates",
+      "services": "Services",
+      "insights": "Insights",
+      "contact": "Contact"
+    },
+    "footer": {
+      "rights": "All rights reserved.",
+      "email": "Email",
+      "linkedin": "LinkedIn",
+      "opensNewTab": "(opens in new tab)"
+    },
+    "readMore": "Read more",
+    "download": "Download"
+  }
+}

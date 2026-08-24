@@ -1,0 +1,14 @@
+{% set homeHref = "/" if lang == "de" else "/en/" %}
+{% set cvHref = "/lebenslauf-zertifikate/" if lang == "de" else "/en/cv-certificates/" %}
+{% set servicesHref = "/dienstleistungen/" if lang == "de" else "/en/services/" %}
+{% set insightsHref = "/insights/" if lang == "de" else "/en/insights/" %}
+{% set contactHref = "/kontakt/" if lang == "de" else "/en/contact/" %}
+<nav class="primary-nav" aria-label="{{ t.nav.home }}">
+  <ul>
+    <li><a href="{{ homeHref }}" {% if page.url == homeHref %}aria-current="page"{% endif %}>{{ t.nav.home }}</a></li>
+    <li><a href="{{ cvHref }}" {% if page.url == cvHref %}aria-current="page"{% endif %}>{{ t.nav.cv }}</a></li>
+    <li><a href="{{ servicesHref }}" {% if page.url == servicesHref %}aria-current="page"{% endif %}>{{ t.nav.services }}</a></li>
+    <li><a href="{{ insightsHref }}" {% if page.url.startsWith(insightsHref) %}aria-current="page"{% endif %}>{{ t.nav.insights }}</a></li>
+    <li><a href="{{ contactHref }}" {% if page.url == contactHref %}aria-current="page"{% endif %}>{{ t.nav.contact }}</a></li>
+  </ul>
+</nav>

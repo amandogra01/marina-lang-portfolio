@@ -1,0 +1,21 @@
+{% set homeHref = "/" if lang == "de" else "/en/" %}
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="{{ homeHref }}">
+      <img src="/assets/images/logo.png" alt="{{ site.name }}" width="42" height="42" class="brand__logo">
+      <span class="brand__name">{{ site.name }}</span>
+    </a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+    <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+      <span class="nav-toggle-icon-open">{% include "icons/menu.njk" %}</span>
+      <span class="nav-toggle-icon-close">{% include "icons/x.njk" %}</span>
+      <span class="visually-hidden">{{ t.nav.home }}</span>
+    </label>
+
+    <div class="site-header__nav-group">
+      {% include "partials/nav.njk" %}
+      {% include "partials/lang-switcher.njk" %}
+    </div>
+  </div>
+</header>

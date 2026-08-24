@@ -1,0 +1,28 @@
+---
+layout: layouts/base.njk
+title: "CV & Certificates — ML Accounting & Controlling LLC"
+description: "Marina Lang's CV and certificates for download — qualifications in accounting, controlling and ERP consulting."
+translationKey: cv
+---
+{% from "components/download-card.njk" import downloadCard %}
+<section class="section">
+  <div class="container">
+    <div class="profile">
+      <img class="profile__photo" src="/assets/images/headshot.jpg" alt="Marina Lang" width="160" height="160">
+      <div class="profile__body prose">
+        <p class="eyebrow">CV & Certificates</p>
+        <h1>Marina Lang</h1>
+        <p>
+          International experience in operational finance, accounting, controlling and
+          ERP consulting. The documents below demonstrate professional qualifications
+          and continuous professional development in finance, accounting and ERP consulting.
+        </p>
+      </div>
+    </div>
+
+    <div class="download-grid">
+      {{ downloadCard("CV", "/assets/documents/cv-en.pdf", "cv-en.pdf", "56 KB", "Download") }}
+      {{ downloadCard("Certificates", "/assets/documents/certificates-en.pdf", "certificates-en.pdf", "460 KB", "Download") }}
+    </div>
+  </div>
+</section>

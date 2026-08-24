@@ -1,0 +1,35 @@
+{% set t = i18n[lang] %}
+{% set alt = collections.byTranslationKey[translationKey] %}
+<!doctype html>
+<html lang="{{ t.htmlLang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  {% if alt.de %}<link rel="alternate" hreflang="de" href="{{ site.url }}{{ alt.de }}">{% endif %}
+  {% if alt.en %}<link rel="alternate" hreflang="en" href="{{ site.url }}{{ alt.en }}">{% endif %}
+  {% if alt.de %}<link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ alt.de }}">{% endif %}
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:locale" content="{{ t.ogLocale }}">
+  <meta property="og:locale:alternate" content="{{ t.ogLocaleAlt }}">
+  <meta property="og:image" content="{{ site.url }}/assets/images/headshot.jpg">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">{{ t.skipToContent }}</a>
+  {% include "partials/header.njk" %}
+  <main id="main">
+    {{ content | safe }}
+  </main>
+  {% include "partials/footer.njk" %}
+</body>
+</html>

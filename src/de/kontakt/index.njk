@@ -1,0 +1,33 @@
+---
+layout: layouts/base.njk
+title: "Kontakt — ML Accounting & Controlling LLC"
+description: "Kontaktieren Sie Marina Lang für Unterstützung in Rechnungswesen, Controlling oder Finance Transformation."
+translationKey: contact
+permalink: "/kontakt/"
+---
+<section class="section">
+  <div class="container prose">
+    <p class="eyebrow">Kontakt</p>
+    <h1>Lassen Sie uns sprechen</h1>
+    <p>
+      Wenn Sie Unterstützung in den Bereichen Rechnungswesen, Controlling oder Finance
+      Transformation benötigen, freue ich mich auf Ihre Nachricht.
+    </p>
+
+    <ul class="contact-links">
+      <li>
+        <a href="mailto:{{ site.email }}">
+          {% include "icons/mail.njk" %}
+          <span>{{ site.email }}</span>
+        </a>
+      </li>
+      <li>
+        <a href="{{ site.linkedin }}" rel="noopener noreferrer" target="_blank">
+          {% include "icons/external-link.njk" %}
+          <span>LinkedIn-Profil</span>
+          <span class="visually-hidden">{{ t.footer.opensNewTab }}</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>

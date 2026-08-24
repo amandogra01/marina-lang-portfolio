@@ -1,0 +1,32 @@
+---
+layout: layouts/base.njk
+title: "Contact — ML Accounting & Controlling LLC"
+description: "Get in touch with Marina Lang for support in accounting, controlling or finance transformation."
+translationKey: contact
+---
+<section class="section">
+  <div class="container prose">
+    <p class="eyebrow">Contact</p>
+    <h1>Let's talk</h1>
+    <p>
+      If you need support in accounting, controlling or finance transformation, I look
+      forward to hearing from you.
+    </p>
+
+    <ul class="contact-links">
+      <li>
+        <a href="mailto:{{ site.email }}">
+          {% include "icons/mail.njk" %}
+          <span>{{ site.email }}</span>
+        </a>
+      </li>
+      <li>
+        <a href="{{ site.linkedin }}" rel="noopener noreferrer" target="_blank">
+          {% include "icons/external-link.njk" %}
+          <span>LinkedIn profile</span>
+          <span class="visually-hidden">{{ t.footer.opensNewTab }}</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>

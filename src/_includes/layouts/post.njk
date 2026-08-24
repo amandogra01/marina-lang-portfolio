@@ -1,0 +1,8 @@
+---
+layout: layouts/base.njk
+---
+<article class="container prose insights-post">
+  <p class="eyebrow">{{ date | readableDate(lang) }}</p>
+  <h1>{{ title }}</h1>
+  {{ content | safe }}
+</article>

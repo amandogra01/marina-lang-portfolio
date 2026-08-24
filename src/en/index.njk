@@ -1,0 +1,60 @@
+---
+layout: layouts/base.njk
+title: "ML Accounting & Controlling LLC — Accounting, Controlling & Finance Transformation"
+description: "Marina Lang advises companies on accounting, controlling and finance transformation, with international experience in ERP projects."
+translationKey: home
+---
+{% from "components/service-card.njk" import serviceCard %}
+<section class="hero">
+  <div class="container prose">
+    <p class="eyebrow">ML Accounting & Controlling LLC</p>
+    <h1>Introducing ML Accounting & Controlling LLC</h1>
+    <p class="hero__tagline">Professionalism &middot; Reliability &middot; Precision</p>
+    <p>
+      Professional consulting in accounting, controlling and finance transformation –
+      backed by international experience in operational finance and ERP transformation
+      projects. The focus is on process optimization, regulatory compliance, and sustainable
+      business success through a collaborative, precision-focused partnership.
+    </p>
+    <div class="hero__actions">
+      <a class="btn btn-primary" href="/en/services/">Explore services</a>
+      <a class="btn btn-secondary" href="/en/contact/">Get in touch</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section__header">
+      <h2>Areas of expertise</h2>
+    </div>
+    <div class="service-grid">
+      {{ serviceCard("Accounting", [
+        "Individual and consolidated financial statements under HGB, IFRS and US-GAAP",
+        "General ledger, accounts receivable, payable and sales tax accounting",
+        "Fixed asset accounting & provisions schedules",
+        "Close process optimization"
+      ]) }}
+      {{ serviceCard("Controlling", [
+        "KPI analyses and reporting frameworks",
+        "Budget planning & forecasting",
+        "Actual vs. plan and variance analyses",
+        "Cost center and profit center controlling"
+      ]) }}
+      {{ serviceCard("Finance Transformation & ERP", [
+        "ERP implementations from planning through go-live",
+        "Financial process analysis and optimization",
+        "Business requirements review & user acceptance testing",
+        "Collaboration with IT and implementation partners"
+      ]) }}
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container prose">
+    <h2>Ready for the next step?</h2>
+    <p>I look forward to getting to know you and your company.</p>
+    <a class="btn btn-primary" href="/en/contact/">Get in touch</a>
+  </div>
+</section>

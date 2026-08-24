@@ -1,0 +1,30 @@
+---
+layout: layouts/base.njk
+title: "Lebenslauf & Zertifikate — ML Accounting & Controlling LLC"
+description: "Lebenslauf und Zertifikate von Marina Lang zum Download – Qualifikationen in Rechnungswesen, Controlling und ERP-Beratung."
+translationKey: cv
+permalink: "/lebenslauf-zertifikate/"
+---
+{% from "components/download-card.njk" import downloadCard %}
+<section class="section">
+  <div class="container">
+    <div class="profile">
+      <img class="profile__photo" src="/assets/images/headshot.jpg" alt="Marina Lang" width="160" height="160">
+      <div class="profile__body prose">
+        <p class="eyebrow">Lebenslauf & Zertifikate</p>
+        <h1>Marina Lang</h1>
+        <p>
+          Internationale Erfahrung im operativen Finanzbereich, in Rechnungswesen,
+          Controlling und ERP-Beratung. Die folgenden Dokumente belegen berufliche
+          Qualifikationen und kontinuierliche fachliche Weiterentwicklung in Finance,
+          Accounting und ERP-Consulting.
+        </p>
+      </div>
+    </div>
+
+    <div class="download-grid">
+      {{ downloadCard("Lebenslauf", "/assets/documents/cv-de.pdf", "cv-de.pdf", "60 KB", "Herunterladen") }}
+      {{ downloadCard("Zertifikate", "/assets/documents/certificates-de.pdf", "certificates-de.pdf", "516 KB", "Herunterladen") }}
+    </div>
+  </div>
+</section>

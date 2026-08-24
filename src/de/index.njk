@@ -1,0 +1,61 @@
+---
+layout: layouts/base.njk
+title: "ML Accounting & Controlling LLC — Rechnungswesen, Controlling & Finance Transformation"
+description: "Marina Lang berät Unternehmen in Rechnungswesen, Controlling und Finance Transformation – mit internationaler Erfahrung in ERP-Projekten."
+translationKey: home
+permalink: "/"
+---
+{% from "components/service-card.njk" import serviceCard %}
+<section class="hero">
+  <div class="container prose">
+    <p class="eyebrow">ML Accounting & Controlling LLC</p>
+    <h1>ML Accounting & Controlling LLC stellt sich vor</h1>
+    <p class="hero__tagline">Professionalität &middot; Zuverlässigkeit &middot; Präzision</p>
+    <p>
+      Professionelle Beratung in Rechnungswesen, Controlling und Finance Transformation –
+      mit internationaler Erfahrung im operativen Finanzbereich und in ERP-Transformationsprojekten.
+      Der Fokus liegt auf Prozessoptimierung, regulatorischer Compliance und nachhaltigem
+      Unternehmenserfolg durch eine partnerschaftliche, präzisionsorientierte Zusammenarbeit.
+    </p>
+    <div class="hero__actions">
+      <a class="btn btn-primary" href="/dienstleistungen/">Dienstleistungen entdecken</a>
+      <a class="btn btn-secondary" href="/kontakt/">Kontakt aufnehmen</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section__header">
+      <h2>Leistungsschwerpunkte</h2>
+    </div>
+    <div class="service-grid">
+      {{ serviceCard("Rechnungswesen", [
+        "Einzel- und Konzernabschlüsse nach HGB, IFRS und US-GAAP",
+        "Haupt-, Debitoren-, Kreditoren- und Umsatzsteuerbuchhaltung",
+        "Anlagenbuchhaltung & Rückstellungsspiegel",
+        "Optimierung von Abschlussprozessen"
+      ]) }}
+      {{ serviceCard("Controlling", [
+        "KPI-Analysen und Kennzahlensysteme",
+        "Budgetplanung & Forecasting",
+        "Soll-Ist- und Abweichungsanalysen",
+        "Kosten- und Profitcenter-Controlling"
+      ]) }}
+      {{ serviceCard("Finance Transformation & ERP", [
+        "ERP-Einführungen von der Planung bis zum Go-live",
+        "Analyse und Optimierung von Finanzprozessen",
+        "Fachkonzeptprüfung & User Acceptance Testing",
+        "Zusammenarbeit mit IT und Implementierungspartnern"
+      ]) }}
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container prose">
+    <h2>Bereit für den nächsten Schritt?</h2>
+    <p>Ich freue mich darauf, Sie und Ihr Unternehmen kennenzulernen.</p>
+    <a class="btn btn-primary" href="/kontakt/">Kontakt aufnehmen</a>
+  </div>
+</section>

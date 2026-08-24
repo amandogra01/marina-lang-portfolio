@@ -1,0 +1,10 @@
+{% macro serviceCard(title, items) %}
+<div class="service-card">
+  <h3>{{ title }}</h3>
+  <ul>
+    {% for item in items %}
+    <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endmacro %}
