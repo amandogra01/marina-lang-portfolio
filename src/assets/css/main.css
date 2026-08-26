@@ -347,17 +347,42 @@ ul { padding-left: 1.2em; }
   margin: var(--space-md) 0 0;
   display: flex;
   flex-direction: column;
-  gap: var(--space-sm);
+  gap: var(--space-xs);
 }
-.contact-links a {
+.contact-card {
   display: inline-flex;
   align-items: center;
   gap: var(--space-2xs);
-  font-weight: 600;
   text-decoration: none;
   color: var(--color-text);
+  font-size: var(--fs-sm);
 }
-.contact-links a:hover { color: var(--color-accent-text); }
+.contact-card:hover { color: var(--color-accent-text); }
+.contact-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+}
+.contact-card__icon .icon { width: 1em; height: 1em; }
+.contact-card__icon--linkedin { color: #0a66c2; }
+.contact-card__text {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2xs);
+  min-width: 0;
+}
+.contact-card__label {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  font-size: 0.85em;
+}
+.contact-card__value {
+  font-weight: 600;
+  word-break: break-word;
+}
 
 /* ---------- Post ---------- */
 .insights-post { padding-block: var(--space-lg); }

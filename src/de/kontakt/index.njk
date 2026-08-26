@@ -16,15 +16,21 @@ permalink: "/kontakt/"
 
     <ul class="contact-links">
       <li>
-        <a href="mailto:{{ site.email }}">
-          {% include "icons/mail.njk" %}
-          <span>{{ site.email }}</span>
+        <a class="contact-card" href="mailto:{{ site.email }}">
+          <span class="contact-card__icon">{% include "icons/mail.njk" %}</span>
+          <span class="contact-card__text">
+            <span class="contact-card__label">{{ t.footer.email }}</span>
+            <span class="contact-card__value">{{ site.email }}</span>
+          </span>
         </a>
       </li>
       <li>
-        <a href="{{ site.linkedin }}" rel="noopener noreferrer" target="_blank">
-          {% include "icons/external-link.njk" %}
-          <span>LinkedIn-Profil</span>
+        <a class="contact-card" href="{{ site.linkedin }}" rel="noopener noreferrer" target="_blank">
+          <span class="contact-card__icon contact-card__icon--linkedin">{% include "icons/linkedin.njk" %}</span>
+          <span class="contact-card__text">
+            <span class="contact-card__label">{{ t.footer.linkedin }}</span>
+            <span class="contact-card__value">LinkedIn-Profil</span>
+          </span>
           <span class="visually-hidden">{{ t.footer.opensNewTab }}</span>
         </a>
       </li>
